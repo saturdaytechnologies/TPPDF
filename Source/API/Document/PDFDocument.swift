@@ -46,7 +46,7 @@ public class PDFDocument: CustomStringConvertible {
     /**
      All objects inside the document and the container they are located in
      */
-    internal var objects: [PDFLocatedRenderObject] = []
+    public internal(set) var objects: [PDFLocatedRenderObject] = []
 
     /**
      Group holding a template or elements which will be rendered on all pages behind the actual content

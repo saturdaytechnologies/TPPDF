@@ -20,12 +20,12 @@ public class PDFRenderObject: CustomStringConvertible {
     /**
      Frame of this object
      */
-    internal var frame: CGRect = CGRect.null
+    public internal(set) var frame: CGRect = CGRect.null
 
     /**
      Attributes set for this object, and their calculated frame
      */
-    internal var attributes: [(attribute: PDFObjectAttribute, frame: CGRect)] = []
+    public internal(set) var attributes: [(attribute: PDFObjectAttribute, frame: CGRect)] = []
 
     /**
      Calculates the object and returns all calculated objects which are created by this calculated.
